@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+<body>
+    <header>
+        
+            <img class= logo src="images/Logo.png" alt="Logo de Alura"/>
+            <h1>Encriptador DATA FG</h1>
+        
+    </header>
+    <main>
+        <section class="textos">
+            <textarea class= entrada name="entrada" id="entrada" cols="30" rows="10" placeholder="Ingrese el texto a encriptar o desencriptar"></textarea>
+            <textarea class= salida name="salida" id="salida" cols="30" rows="10" background-image src="/images/Muñeco.png" placeholder= "Ningun mensaje encontrado Ingrese el texto a encriptar o desencriptar"></textarea>
+            <p class="instruccion">  Solo letras minúsculas y sin acentos</p>
+            <button class="copiar" onclick="btnCopiar()">Copiar</button>
+        </section>
+        <section class="botones">
+            <button class="encriptar" onclick="btnEncriptar()">Encriptar</button> 
+            <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>   
+       </section>
+    </main>
+    <footer>
+        <h6 id=copyrigth >      Desarrollado por DataFG con apoyo de Alura 2023</h6>
+    </footer>
+    <script src="./codigo.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+*{
+    font-family: inter;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+body{
+    background: linear-gradient(rgb(250, 250, 250), rgb(210, 207, 207));
+ }
+
+ header{
+     margin-top: 20px auto;
+     padding-top: 5px;
+ }
+ .logo{
+    display: inline-block;
+    height: 25%; 
+    margin-top:60px;
+    margin-left: 50px; 
+ }
+ h1{
+    display: inline-block;
+    text-align: left;
+    font-family: "inter";
+    font-size: 2.5em;
+    font-weight: bolder;
+    color:rgb(12, 12, 78);
+    margin-left: 20px;
+    padding-top: 10px;
+ }
+
+  .entrada{
+    position: fixed;
+    border: none;
+    background: linear-gradient(rgb(239, 241, 241), rgb(216, 214, 214));
+    margin-top: 60px; 
+    margin-left: 150px;
+    width: 800px;
+    height: 600px;
+    text-transform: lowercase;
+    font-family: inter;
+    font-size: 40px;
+}
+::placeholder{
+    color: rgba(2, 2, 23, 1);
+    font-family: inter;
+    font-size:32px;
+    line-height: 48px;
+    
+}
+.entrada:focus {
+    outline:none;
+}
+
+.salida{
+    position:fixed;
+    border: none;
+    width: 400px;
+    height: 860px;
+    left: 1380px;
+    font-size: 40px;
+    padding: 20px;
+    background-image: url(images/Muñeco.png);
+    background-position: center;
+    background-repeat:no-repeat;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
+    }
+
+    .salida::placeholder{
+        padding-top: 670px;
+        text-align: center;
+        font-size: 0.6em;
+        line-height: 1.2;
+        font-weight: bold;
+    }
+        
+    .salida:focus {
+        outline:none;
+    }
+    .salida:hover{
+        opacity: 0.6;
+        border-color: #D8DFE8;
+    }
+
+    .botones{
+        position:fixed;
+        margin-top: 760px;
+        margin-left: 160px;
+        }
+        .botones button:hover{
+            background: #495456;
+            padding: 10px;
+            transition: .3s;
+        }
+        
+        .encriptar{
+        background-color: #0A3871;
+        border: 1px solid #D8DFE8;
+        height: 67px;
+        width: 328px;
+        margin: 20px;
+        border-radius: 24px;
+        border-radius: 24px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+        }
+    
+        .desencriptar{
+        background-color: #D8DFE8;
+        border: 1px solid #0A3871;
+        height: 67px;
+        width: 328px;
+        margin: 20px;
+        border-radius: 24px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 19px;
+        text-align: center;
+        cursor: pointer;
+        }
+    
+        .instruccion{
+            display: inline;
+            width: 600px;
+            padding-bottom: 10px;
+            line-height: 2em;
+            position: fixed;
+            text-align:left;
+            margin-top: 740px;
+            margin-left: 180px;
+            }
+
+        .instruccion::before{
+            content: url(images/information_info_1565.png);
+        }    
+        .instruccion:hover{
+            font-size: 2.7ex;
+            font-weight: bold;
+        }
+
+        
+        .copiar{
+            display: inline;
+            position:fixed;
+            background-color: #D8DFE8;
+            border: 1px solid #0A3871;
+            height: 67px;
+            width: 328px;
+            margin-top: 775px;
+            margin-left: 1430px;
+            border-radius: 24px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 19px;
+            text-align: center;
+            color: #0A3871;
+            flex: none;
+            order: 0;
+            flex-grow: 1;
+            cursor: progress;
+        }
+        
+ footer{
+    position: relative;
+    display:block;
+    margin-top: 890px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    
+ }
+ 
+ #copyrigth{
+    text-align: center;
+    line-height: 2em;
+    font-weight: bold;
+ }
+
+ #copyrigth:before{
+    content: url(images/registered_trademark_icon_135259.png) ;
+ }
+   footer:hover{
+    background: linear-gradient(rgb(210, 209, 209), rgb(112, 111, 111));
+}
+
+@media screen and (max-width:480px){
+    header{
+        text-align: center;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    .instruccion{
+        display: block;
+        position: absolute;
+        font-size: 0.6em;
+        margin-left: 15px;
+        margin-top: -1550px;
+        
+   }
+    .botones{
+        position:sticky;
+        margin-top: -1000px;
+        margin-left: 50%;
+        padding: 5px; 
+    }
+
+    .encriptar{
+        width: 100%;
+        padding: -15%;
+    }
+    .desencriptar{
+        width: 100%;
+        padding: -15%;
+    }
+    .textos{
+        display: block;
+    }
+    .entrada{
+        position: static;
+        width: 150%;
+        margin-left: 20px;
+        border-radius: 32px;
+    }
+    .salida{
+        position: static;
+        margin-top: 40px;
+        margin-left: 20px;
+        width: 150%;
+    }
+    .copiar{
+        position:absolute;
+        margin-left: 45%;
+        margin-top: 10px;
+        width: 70%;
+    }
+
+}
+   
